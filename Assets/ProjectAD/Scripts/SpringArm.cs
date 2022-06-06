@@ -5,30 +5,57 @@ using UnityEngine;
 
 namespace ProjectAD
 {
+    [ExecuteAlways]
     public class SpringArm : MonoBehaviour
     {
-        [Tooltip("Camera follows target")]
-        [SerializeField] private GameObject m_target;
-        [Tooltip("Atached camera at SpringArm")]
-        [SerializeField] private Camera m_camera;
-
-        [SerializeField] private float m_length = 15.0f;
-        [SerializeField] private Vector3 m_armOffset;
-
-
-        private void Awake ()
+        public float Length
         {
-            if(m_camera == null)
+            get => m_length;
+            set => m_length = value;
+        }
+
+        public float Angle
+        {
+            get => m_angle;
+            set => m_angle = Mathf.Clamp(value, 0.0f, 90.0f);
+        }
+
+        public float Rotate
+        {
+            get => m_rotate;
+            set
             {
-                m_camera = GetComponentInChildren<Camera>();
+                float rate = (value + 360.0f) / 360.0f - ((int)value + 360) / 360;
+                m_rotate = rate * 360.0f;
             }
         }
+
+
+        [Tooltip("Camera follows target")]
+        [SerializeField] private GameObject m_target;
+
+        [Tooltip("Distance from target")]
+        [SerializeField] private float m_length = 15.0f;
+        [Tooltip("Degree of camera's roll")]
+        [Range(0.0f, 90.0f)]
+        [SerializeField] private float m_angle = 35.0f;
+        [Tooltip("Degree of camera's pitch")]
+        [SerializeField] private float m_rotate = 0.0f;
 
         private void LateUpdate ()
         {
             if (m_target == null) return;
 
-            transform.position = m_target.transform.position + Vector3.back * m_length + m_armOffset;
+            Vector3 cameraPos =
+                Quaternion.AngleAxis(m_rotate, Vector3.up)
+                * Quaternion.AngleAxis(m_angle, Vector3.right)
+                * (Vector3.back * m_length);
+
+            transform.position = m_target.transform.position + cameraPos;
+
+            transform.rotation = 
+                Quaternion.AngleAxis(m_rotate, Vector3.up)
+                * Quaternion.AngleAxis(m_angle, Vector3.right);
         }
     }
 }

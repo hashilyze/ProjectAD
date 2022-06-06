@@ -194,6 +194,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -345,6 +353,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -481,6 +497,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,6 +646,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -774,6 +806,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -920,6 +960,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1060,6 +1108,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1202,6 +1258,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1272,6 +1336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+--- !u!4 &137153109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
+  m_PrefabInstance: {fileID: 947865844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &139075333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
@@ -1415,6 +1484,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1555,6 +1632,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1697,6 +1782,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1838,6 +1931,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1908,6 +2009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+--- !u!4 &181121587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
+  m_PrefabInstance: {fileID: 872493268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &186751231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
@@ -1983,6 +2089,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2130,6 +2244,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2271,6 +2393,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2411,6 +2541,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2606,6 +2744,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2696,24 +2842,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
-      propertyPath: m_gravity
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_friction
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_maxSpeed
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
-      propertyPath: m_gravity.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
-      propertyPath: m_gravity.y
-      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_useGravity
@@ -2773,11 +2907,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 14063c6a6ffd15f4396835ba5c8e8d0c, type: 2}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.41
+      value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2785,7 +2919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.11
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2793,15 +2927,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2897,6 +3031,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3008,7 +3150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: bc8499bc454cd7646a0b761e3a3424f7, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 6c6cd766c40df1146ba00e29eadf8d03, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -3025,22 +3167,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 307291924}
         m_TargetAssemblyTypeName: ProjectAD.InputManager, Assembly-CSharp
-        m_MethodName: OnJump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 804f9d48-7aab-4b33-9d30-9f7b0978bab8
-    m_ActionName: Player/Jump
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 307291924}
-        m_TargetAssemblyTypeName: ProjectAD.InputManager, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
@@ -3051,10 +3177,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 81ed6cc6-9192-40ce-b874-0e258ef72894
+    m_ActionId: 98716101-dae5-453d-abaf-1a0ba4cbf927
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 307291924}
+        m_TargetAssemblyTypeName: ProjectAD.InputManager, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d9dae1da-7f5b-47d7-9e0d-f059afffaf95
+    m_ActionName: Player/Jump[/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 307291924}
+        m_TargetAssemblyTypeName: ProjectAD.InputManager, Assembly-CSharp
+        m_MethodName: OnLook
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f22e1a5e-1b78-4f85-85a9-c4edc341069f
+    m_ActionName: Player/Mouse[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: KeyboardMouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -3084,6 +3242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49fa5299d7c0d34c8b3616e98176c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_springArm: {fileID: 963194229}
+  m_lookAngle: 1
+  m_lookRotate: 1
+  m_sensitive: 0.1
 --- !u!1001 &314871681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3154,6 +3316,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3292,54 +3462,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
   m_PrefabInstance: {fileID: 323467162}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &330114710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330114712}
-  - component: {fileID: 330114711}
-  m_Layer: 0
-  m_Name: SpringArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &330114711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330114710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 632ef0ca3c66b314fb3fa0f21d0b1093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_target: {fileID: 1898455843}
-  m_camera: {fileID: 963194227}
-  m_length: 12
-  m_armOffset: {x: 0, y: 8, z: 0}
---- !u!4 &330114712
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330114710}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 8, z: -12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 963194228}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1001 &337432521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3472,6 +3594,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3781,6 +3911,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3984,6 +4122,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4129,6 +4275,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4276,6 +4430,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4416,6 +4578,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4563,6 +4733,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4704,6 +4882,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4844,6 +5030,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5043,6 +5237,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5193,6 +5395,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5360,6 +5570,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5500,6 +5718,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5742,6 +5968,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5835,7 +6069,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643267524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 38.1342, y: -0.95, z: 9.624974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5861,8 +6095,8 @@ Transform:
   - {fileID: 399126812}
   - {fileID: 938338053}
   - {fileID: 638518887}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 872868666}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &644368661
 PrefabInstance:
@@ -5934,6 +6168,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6086,6 +6328,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6232,6 +6482,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6372,6 +6630,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6514,6 +6780,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6589,11 +6863,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6613,15 +6887,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6736,8 +7010,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 872868666}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &706486857
 PrefabInstance:
@@ -6809,6 +7083,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6956,6 +7238,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7092,6 +7382,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7234,6 +7532,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7374,6 +7680,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7521,6 +7835,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7661,6 +7983,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7813,6 +8143,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7954,6 +8292,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8024,6 +8370,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+--- !u!1 &808312720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808312721}
+  - component: {fileID: 808312724}
+  - component: {fileID: 808312723}
+  - component: {fileID: 808312722}
+  m_Layer: 0
+  m_Name: Planet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808312721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808312720}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 54.1, y: 12.88, z: -16.76}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_Children: []
+  m_Father: {fileID: 872868666}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &808312722
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808312720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &808312723
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808312720}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &808312724
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808312720}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &820007488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
@@ -8057,7 +8498,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859847954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.54, y: 0, z: 2.0995128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8162,7 +8603,7 @@ Transform:
   - {fileID: 992241453}
   - {fileID: 1895574152}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &864299312 stripped
 Transform:
@@ -8174,11 +8615,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8198,15 +8639,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8226,6 +8667,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfca68b33b6140048aef2dedad2f7f38, type: 3}
+--- !u!1 &872868665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 872868666}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &872868666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872868665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 705507995}
+  - {fileID: 1636255279}
+  - {fileID: 181121587}
+  - {fileID: 1262737832}
+  - {fileID: 137153109}
+  - {fileID: 1052011421}
+  - {fileID: 643267525}
+  - {fileID: 1224518131}
+  - {fileID: 1862191378}
+  - {fileID: 1427317844}
+  - {fileID: 808312721}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &876211400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
@@ -8303,7 +8785,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 6639349549578511057, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_Name
@@ -8315,7 +8797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8335,15 +8817,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7110927949203527778, guid: 6930c2c08a24e4d4190a6487d8f83bd9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8434,6 +8916,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8611,8 +9101,9 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Debug Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8649,9 +9140,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -8676,13 +9167,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.38268346, y: 0, z: 0, w: 0.9238795}
+  m_LocalPosition: {x: 6.7, y: 6.1568546, z: -7.956854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 330114712}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 35, y: -0.309, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632ef0ca3c66b314fb3fa0f21d0b1093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_target: {fileID: 1898455843}
+  m_length: 8
+  m_angle: 45
+  m_rotate: 0
 --- !u!1001 &965680170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8753,6 +9260,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8978,6 +9493,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9141,12 +9664,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052011417}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -4, y: 0, z: -3}
   m_LocalScale: {x: 100, y: 10, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 872868666}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1053440537
 PrefabInstance:
@@ -9218,6 +9741,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9355,6 +9886,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9574,6 +10113,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9745,6 +10292,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9890,6 +10445,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10094,6 +10657,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10234,6 +10805,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10495,6 +11074,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10641,6 +11228,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10767,15 +11362,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224518128}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14.14, y: 1.5, z: -10.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 359249596}
   - {fileID: 1969560486}
   - {fileID: 960801249}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 872868666}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1229897429 stripped
 Transform:
@@ -10852,6 +11447,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10994,6 +11597,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11131,6 +11742,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11267,6 +11886,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11409,6 +12036,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11489,6 +12124,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
   m_PrefabInstance: {fileID: 1236318685}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1262737832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
+  m_PrefabInstance: {fileID: 1693172886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1287950394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11559,6 +12199,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11702,6 +12350,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11842,6 +12498,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11989,6 +12653,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12129,6 +12801,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3902404008137577552, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
   m_PrefabInstance: {fileID: 3902404009529110528}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1427317844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
+  m_PrefabInstance: {fileID: 3902404009529110528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1430232408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12266,6 +12943,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12413,6 +13098,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12553,6 +13246,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12695,6 +13396,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12836,6 +13545,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12976,6 +13693,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13138,6 +13863,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13278,6 +14011,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13487,6 +14228,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13562,6 +14311,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
   m_PrefabInstance: {fileID: 1247439817}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1636255279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303782370835110049, guid: ca258ad62c7b0a543866529895c9df0c, type: 3}
+  m_PrefabInstance: {fileID: 686115552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1653465550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
@@ -13634,11 +14388,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13658,15 +14412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1303782370835110049, guid: 17067e18c59404f4792566c3557fa0fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13756,6 +14510,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13903,6 +14665,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14049,6 +14819,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14190,6 +14968,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14330,6 +15116,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14487,6 +15281,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14638,6 +15440,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14778,6 +15588,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14920,6 +15738,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15061,6 +15887,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15135,6 +15969,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598036246238167773, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
   m_PrefabInstance: {fileID: 1208596676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1862191378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
+  m_PrefabInstance: {fileID: 888507300288831185}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1866263544
 PrefabInstance:
@@ -15263,6 +16102,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15467,6 +16314,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15618,6 +16473,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15754,6 +16617,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16015,6 +16886,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16155,6 +17034,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16392,6 +17279,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16537,6 +17432,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16741,6 +17644,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16887,6 +17798,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17039,6 +17958,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17184,6 +18111,14 @@ PrefabInstance:
     - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17331,6 +18266,14 @@ PrefabInstance:
       propertyPath: m_interactiveCollider.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killPositionWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139837152727393375, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
+      propertyPath: m_killRemainedDistanceWhenExceedVelocityIteration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196090246633600665, guid: 2e74ddaed6c4a4b449cdbde13910ab23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17473,7 +18416,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 888507301904594957, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_Name
@@ -17481,7 +18424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17501,15 +18444,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 888507301904594993, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17524,6 +18467,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7151136661936585690, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
+      propertyPath: m_killVelocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151136661936585690, guid: 5ed927cd3f372eb4ca62ed6cb8ee1d67, type: 3}
       propertyPath: m_warpLocation
       value: 
       objectReference: {fileID: 1427317840}
@@ -17534,7 +18481,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 872868666}
     m_Modifications:
     - target: {fileID: 3902404008137577552, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_Name
@@ -17542,19 +18489,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.5
+      value: 54.05
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.62
+      value: 23.88
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1
+      value: -15.83
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17562,15 +18509,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3902404008137577556, guid: 062e68e9b81e3894e97fbb888b63a57a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

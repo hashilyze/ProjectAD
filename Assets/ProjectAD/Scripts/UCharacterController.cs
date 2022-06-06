@@ -4,7 +4,12 @@ using UnityEngine;
 
 namespace ProjectAD
 {
-    public enum State { Walk, Fall, Fly, Swim, Custom }
+    public enum EState { 
+        Walk, // Effected by gravity
+        Fly, // Effected by zero gravity
+        Swim, // Efftected by buoyancy
+        Custom // User defined movement
+    }
 
     [System.Serializable]
     public struct GroundHitReport
@@ -30,22 +35,28 @@ namespace ProjectAD
         [Header("Base")]
         [ReadOnly]
         [SerializeField] private Vector3 m_velocity;
-        [SerializeField] private float m_mass = 100.0f;
+        //[SerializeField] private float m_mass = 100.0f;
+        [SerializeField] private EState m_state = EState.Walk;
         
-        [Header("Gravity/Grounding")]
+        [Header("Gravity")]
         [Tooltip("Apply gravity as character is on airbone")]
         [SerializeField] private bool m_useGravity = true;
-        [Tooltip("Character would fall toward bottom with its acceleration")]
-        [SerializeField] private float m_gravity = 9.8f;
+        [Tooltip("Sacle of gravity without any weights; Higher falls faster")]
+        [SerializeField] private float m_gravity = 10.0f;
+        [Tooltip("Enhance gravity when fall")]
+        [SerializeField] private float m_fallWeights = 1.2f;
+        [ReadOnly]
+        [SerializeField] private float m_gravityWeights = 1.0f;
+
+        [Header("Grounding")]
         [Tooltip("Snap character to ledge when bounce on ledge")]
         [SerializeField] private bool m_useGroundSnap = true;
         [Tooltip("Maximum angle to stand on ground")]
         [Range(0.0f, 90.0f)]
         [SerializeField] private float m_stableAngle = 50.0f;
-        //[Tooltip("Note: Unused property")]
-        //[SerializeField] private float m_stepOffset = 0.2f;
         [ReadOnly]
         [SerializeField] private GroundHitReport m_groundReport;
+        // Force Unground parameters
         private bool m_forcedUnground;
         private float m_ungroundedTimmer;
         private float m_elapsedUngroundedTime = 0.0f;
@@ -58,7 +69,7 @@ namespace ProjectAD
         [Tooltip("Fast to reach stop(zero velocity)s")]
         [SerializeField] private float m_friction = float.PositiveInfinity;
 
-        [Header("Jump/Fall")]
+        [Header("Fall/Jump")]
         [Tooltip("Maximum speed as move on air")]
         [SerializeField] private float m_maxAirSpeed = 5.0f;
         [Tooltip("Fast to reach MaxSpeed")]
@@ -67,24 +78,38 @@ namespace ProjectAD
         [SerializeField] private float m_drag = float.PositiveInfinity;
         [Tooltip("Limit applied garvity")]
         [SerializeField] private float m_maxFallSpeed = 10.0f;
+
         [Tooltip("Maximum distance as jump without obstacle")]
-        [SerializeField] private float m_jumpDistance = 5.0f;
+        [SerializeField] private float m_maxJumpDistance = 5.0f;
+        [Tooltip("Minimum distance as jump without obstacle")]
+        [SerializeField] private float m_minJumpDistance = 1.0f;
         [Tooltip("How many do jumping on air")]
         [SerializeField] private int m_moreJumpCount = 1;
         private int m_leftMoreJumpCount;
 
+        private bool m_doJump;
+        private float m_elapsedJumpTime;
+
+        
         [Header("Physics Interaction")]
+        [Tooltip("Character could collide and detect with objects whose layer is in this")]
         [SerializeField] private LayerMask m_interactiveCollider = -1;
         [Tooltip("Gap between character and others")]
         [SerializeField] private float m_contactOffset = 0.02f;
-        [SerializeField] private int m_maxVelocityIteration = 5;
+        [Tooltip("Accuracy of depentration solver; Higher costs more")]
+        [SerializeField] private int m_depentrationIteration = 2;
+        [Tooltip("Accuracy of velocity solver; Higher costs more")]
+        [SerializeField] private int m_velocityIteration = 5;
+        [Tooltip("Canceal velocity interation (recomandation to use)")]
         [SerializeField] private bool m_killPositionWhenExceedVelocityIteration = true;
-        [SerializeField] private int m_maxDecollisionIteration = 2;
+        [Tooltip("Discard remained deistance but not appand (recomandation to use)")]
+        [SerializeField] private bool m_killRemainedDistanceWhenExceedVelocityIteration = true;
 
-
+        // Memory cache
         private readonly Collider[] m_colliderBuffer = new Collider[8];
         private readonly RaycastHit[] m_hitInfoBuffer = new RaycastHit[8];
 
+        // Outside components
         private CapsuleCollider m_bodyCollider;
         private Rigidbody m_rigidbody;
         private GameObject m_visual;
@@ -96,25 +121,31 @@ namespace ProjectAD
         private Vector3 m_nextPos;
         private Quaternion m_nextRot;
 
-        // Input values
+        // Requested values
         private Vector3 m_inputDirection;
-        private bool m_inputJump;
-        private bool m_inputStopJump;
-
+        private bool m_requestedJump;
+        private bool m_requestedStopJump;
+        
         private bool m_requestedTeleport;
         private Vector3 m_teleportLocation;
+        private bool m_killVelocityWhenTP;
 
         private bool m_requestedLook;
         private Vector3 m_lookDirection;
 
+
         private void ValidateData ()
         {
-            m_visual = transform.Find("Visual").gameObject;
+            if(m_visual == null)
+            {
+                m_visual = transform.Find("Visual").gameObject;
+            }
 
             m_bodyCollider = GetComponent<CapsuleCollider>();
             if (m_bodyCollider != null)
             {
                 m_bodyCollider.isTrigger = false;
+                // The foot position is character's position
                 m_bodyCollider.center = new Vector3(0.0f, m_bodyCollider.height * 0.5f + m_contactOffset, 0.0f);
 
                 if(m_visual != null)
@@ -132,6 +163,12 @@ namespace ProjectAD
             }
         }
 
+        private void ResetData ()
+        {
+            m_doJump = false;
+            m_leftMoreJumpCount = m_moreJumpCount;
+        }
+
         private void OnValidate ()
         {
             ValidateData();
@@ -140,7 +177,7 @@ namespace ProjectAD
         private void OnEnable ()
         {
             OnValidate();
-            m_leftMoreJumpCount = m_moreJumpCount;
+            ResetData();
 
             KinematicPhysicsSystem.RegisterCharacterController(this);
             InputManager.RegisterPlayer(this);
@@ -151,10 +188,15 @@ namespace ProjectAD
             InputManager.UnregisterPlayer(this);
         }
 
-        public void Teleport(Vector3 position)
+
+        /// <summary>
+        /// Locate character at directed location without checking safe
+        /// </summary>
+        public void Teleport(Vector3 position, bool killVelocity = false)
         {
             m_requestedTeleport = true;
             m_teleportLocation = position;
+            m_killVelocityWhenTP = killVelocity;
         }
         public void Look(Vector3 forward)
         {
@@ -162,17 +204,24 @@ namespace ProjectAD
             m_lookDirection = forward;
         }
 
+        /// <summary>
+        /// Move character continuosly
+        /// </summary>
+        /// <param name="direction">
+        /// X: left-right; Z: forward-backward based on camera
+        /// Y: top-bottom based on character
+        /// </param>
         public void InputMove (Vector3 direction)
         {
             m_inputDirection = direction;
         }
         public void InputJump ()
         {
-            m_inputJump = true;
+            m_requestedJump = true;
         }
         public void InputStopJump ()
         {
-            m_inputStopJump = true;
+            m_requestedStopJump = true;
         }
 
         /// <summary>
@@ -202,12 +251,16 @@ namespace ProjectAD
             m_nextPos = m_initPos;
             m_nextRot = m_initRot;
 
-            #region Set Traonsform (Teleport, Look)
+            #region Set Traonsform (Teleport, Look): Async Function
             // Consume Teleport
             if (m_requestedTeleport)
             {
                 m_requestedTeleport = false;
                 m_nextPos = m_teleportLocation;
+                if (m_killVelocityWhenTP)
+                {
+                    m_velocity = Vector3.zero;
+                }
             }
 
             // Consume Look
@@ -223,110 +276,117 @@ namespace ProjectAD
             #endregion
 
             #region Detect Ground
-            // Set ground report to no touched
-            if (m_forcedUnground)
+            if (m_state == EState.Walk)
             {
-                // Force detaching ground
-                if (m_groundReport.hitAnyGround && m_groundReport.isStable)
+                // Set ground report to no touched
+                if (m_forcedUnground)
                 {
-                    m_nextPos += m_contactOffset * 1.5f * (m_nextRot * Vector3.up);
-                }
-                m_groundReport.hitAnyGround = false;
-                m_groundReport.hitCollider = null;
+                    // Force detaching ground
+                    m_groundReport.hitAnyGround = false;
+                    m_groundReport.hitCollider = null;
 
-                // Update timmer
-                m_elapsedUngroundedTime += deltaTime;
-                if (m_elapsedUngroundedTime >= m_ungroundedTimmer)
-                {
-                    m_forcedUnground = false;
-                }
-            }
-            // Check ground
-            else
-            {
-                // Before update report, cache previous report
-                // Used for checking OnLanded
-                bool wasStable = m_groundReport.hitAnyGround && m_groundReport.isStable;
-                m_groundReport.hitAnyGround = false;
-                m_groundReport.hitCollider = null;
-                Vector3 characterUp = m_nextRot * Vector3.up;
-
-                float detectDistance = m_contactOffset * 1.5f;
-                // Expand detect distance to snap down ledge (loose detection span)
-                float maxExpand = Vector3.ProjectOnPlane(m_velocity * deltaTime, characterUp).magnitude * Mathf.Tan(m_stableAngle * Mathf.Deg2Rad);
-                // Ground means an interactive object detected from foot
-                if (GetClosestHit(m_nextPos, m_nextRot, -characterUp, detectDistance + maxExpand, out RaycastHit closestHit))
-                {
-                    m_groundReport.hitAnyGround = true;
-
-                    m_groundReport.hitCollider = closestHit.collider;
-                    m_groundReport.hitPoint = closestHit.point;
-                    m_groundReport.hitNormal = closestHit.normal;
-
-                    float angle = Vector3.Angle(characterUp, closestHit.normal);
-                    m_groundReport.hitAngle = angle;
-
-                    m_groundReport.isStable = false;
-                    if (angle < m_stableAngle)
+                    // Update timmer
+                    m_elapsedUngroundedTime += deltaTime;
+                    if (m_elapsedUngroundedTime >= m_ungroundedTimmer)
                     {
-                        // Strict detection span
-                        float realExpand;
-                        float verticalSpeed = Vector3.Dot(characterUp, m_velocity);
-                        if (verticalSpeed > 0.0f)
-                        {
-                            realExpand = verticalSpeed * deltaTime;
-                        }
-                        else
-                        {
-                            realExpand = Vector3.ProjectOnPlane(m_velocity * deltaTime, characterUp).magnitude * Mathf.Tan(angle * Mathf.Deg2Rad);
-                        }
-                        if (closestHit.distance <= detectDistance + realExpand)
-                        {
-                            m_groundReport.isStable = true;
-                        }
+                        m_forcedUnground = false;
                     }
                 }
-
-                // Events for detecting ground
-                // On Ground
-                if (m_groundReport.hitAnyGround && m_groundReport.isStable)
+                // Check ground
+                else
                 {
-                    // Ground snapping
-                    if (m_useGroundSnap)
+                    // Before update report, cache previous report; used for checking OnLanded
+                    bool wasStable = m_groundReport.hitAnyGround && m_groundReport.isStable;
+                    m_groundReport.hitAnyGround = false;
+                    m_groundReport.hitCollider = null;
+                    Vector3 characterUp = m_nextRot * Vector3.up;
+
+                    float detectDistance = m_contactOffset * 1.5f;
+                    // Expand detect distance to snap down ledge (loose detection span)
+                    float maxExpand = Vector3.ProjectOnPlane(m_velocity * deltaTime, characterUp).magnitude * Mathf.Tan(m_stableAngle * Mathf.Deg2Rad);
+                    // Ground means an interactive object detected from foot
+                    if (GetClosestHit(m_nextPos, m_nextRot, -characterUp, detectDistance + maxExpand, out RaycastHit closestHit))
                     {
-                        m_nextPos -= (closestHit.distance - m_contactOffset) * characterUp;
+                        m_groundReport.hitAnyGround = true;
+
+                        m_groundReport.hitCollider = closestHit.collider;
+                        m_groundReport.hitPoint = closestHit.point;
+                        m_groundReport.hitNormal = closestHit.normal;
+
+                        float angle = Vector3.Angle(characterUp, closestHit.normal);
+                        m_groundReport.hitAngle = angle;
+
+                        m_groundReport.isStable = false;
+                        if (angle < m_stableAngle)
+                        {
+                            // Strict detection span
+                            float realExpand;
+                            float verticalSpeed = Vector3.Dot(characterUp, m_velocity);
+                            if (verticalSpeed > 0.0f)
+                            {
+                                realExpand = verticalSpeed * deltaTime;
+                            }
+                            else
+                            {
+                                realExpand = Vector3.ProjectOnPlane(m_velocity * deltaTime, characterUp).magnitude * Mathf.Tan(angle * Mathf.Deg2Rad);
+                            }
+                            if (closestHit.distance <= detectDistance + realExpand)
+                            {
+                                m_groundReport.isStable = true;
+                            }
+                        }
                     }
 
-                    // On Landed (first tick when grounded)
-                    if (!wasStable)
+                    // Events for detecting ground
+                    // On Ground
+                    if (m_groundReport.hitAnyGround && m_groundReport.isStable)
                     {
-                        m_velocity = Vector3.ProjectOnPlane(m_velocity, characterUp);
-                        m_leftMoreJumpCount = m_moreJumpCount;
-                        OnLand?.Invoke(this);
+                        // Ground snapping
+                        if (m_useGroundSnap)
+                        {
+                            m_nextPos -= (closestHit.distance - m_contactOffset) * characterUp;
+                        }
+
+                        // On Landed (first tick when grounded)
+                        if (!wasStable)
+                        {
+                            m_velocity = Vector3.ProjectOnPlane(m_velocity, characterUp);
+
+                            m_leftMoreJumpCount = m_moreJumpCount;
+                            m_doJump = false;
+                            m_gravityWeights = 1.0f;
+
+                            OnLand?.Invoke(this);
+                        }
                     }
                 }
             }
             #endregion
 
-            #region Apply Ground Movement
-            if (m_groundReport.hitAnyGround && m_groundReport.isStable)
+            #region Apply Ground Movement (Tracking target)
+            if (m_state == EState.Walk)
             {
-                Rigidbody groundRB = m_groundReport.hitCollider.attachedRigidbody;
-                if (groundRB != null && groundRB.TryGetComponent(out UPlatformController platform))
+                if (m_groundReport.hitAnyGround && m_groundReport.isStable)
                 {
-                    Vector3 groundDistance = Vector3.zero;
-
-                    groundDistance += platform.Velocity * deltaTime;
-
-                    if(!Mathf.Approximately(platform.RotateSpeed, 0.0f))
+                    Rigidbody groundRB = m_groundReport.hitCollider.attachedRigidbody;
+                    if (groundRB != null && groundRB.TryGetComponent(out UPlatformController platform))
                     {
-                        Vector3 start = m_groundReport.hitPoint;
-                        Quaternion deltaRotation = Quaternion.AngleAxis(platform.RotateSpeed * deltaTime, platform.RotateAxis);
-                        Vector3 dest = deltaRotation * (start - groundRB.position) + groundRB.position;
-                        groundDistance += dest - start;
-                    }
+                        Vector3 groundDistance = Vector3.zero;
 
-                    CharacterMove(groundDistance);
+                        // Linear velocity
+                        groundDistance += platform.Velocity * deltaTime;
+
+                        // Angular velocity
+                        if (!Mathf.Approximately(platform.RotateSpeed, 0.0f))
+                        {
+                            Vector3 start = m_groundReport.hitPoint;
+                            Quaternion deltaRotation = Quaternion.AngleAxis(platform.RotateSpeed * deltaTime, platform.RotateAxis);
+                            Vector3 dest = deltaRotation * (start - groundRB.position) + groundRB.position;
+                            groundDistance += dest - start;
+                        }
+
+                        CharacterMove(groundDistance);
+                    }
                 }
             }
             #endregion
@@ -345,109 +405,155 @@ namespace ProjectAD
             #endregion
 
             #region Update Velocity
-            // Movement on stable ground 
-            if (m_groundReport.hitAnyGround && m_groundReport.isStable)
+            switch (m_state)
             {
-                // Reorient current velocity
-                Vector3 tangentVelocity = Vector3.ProjectOnPlane(m_velocity, m_groundReport.hitNormal).normalized;
-                Vector3 reorientVelocity = m_velocity.magnitude * tangentVelocity;
-                
-                // Acceleration the character movement
-                if (m_inputDirection != Vector3.zero)
+            case EState.Walk:
+                // Movement on stable ground 
+                if (m_groundReport.hitAnyGround && m_groundReport.isStable)
                 {
-                    Quaternion inputRotator = Quaternion.FromToRotation(m_nextRot * Vector3.up, m_groundReport.hitNormal);
-                    if (float.IsPositiveInfinity(m_acceleration))
-                    {
-                        m_velocity = m_maxSpeed * (inputRotator * m_inputDirection);
-                    }
-                    else
-                    {
-                        Vector3 deltaAddedVelocity = m_acceleration * deltaTime * (inputRotator * m_inputDirection);
-                        m_velocity = Vector3.ClampMagnitude(reorientVelocity + deltaAddedVelocity, m_maxSpeed);
-                    }
-                }
-                // Break the character movement (Decline velocity to zero)
-                else
-                {
-                    m_velocity = Vector3.Lerp(reorientVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_friction * deltaTime));
-                }
-            }
-            // Movement on airbone
-            else
-            {
-                Vector3 characterUp = m_nextRot * Vector3.up;
+                    // Reorient current velocity
+                    Vector3 tangentVelocity = Vector3.ProjectOnPlane(m_velocity, m_groundReport.hitNormal).normalized;
+                    Vector3 reorientVelocity = m_velocity.magnitude * tangentVelocity;
 
-                Vector3 horizontalVelocity = Vector3.ProjectOnPlane(m_velocity, characterUp);
-                float verticalSpeed = Vector3.Dot(m_velocity, characterUp);
-                Vector3 verticalVelocity = characterUp * verticalSpeed;
-
-                // Horizontal velocity
-                {
+                    // Acceleration the character movement
                     if (m_inputDirection != Vector3.zero)
                     {
-                        if (float.IsPositiveInfinity(m_airAcceleration))
+                        Quaternion inputRotatorForGround = Quaternion.FromToRotation(m_nextRot * Vector3.up, m_groundReport.hitNormal);
+                        if (float.IsPositiveInfinity(m_acceleration))
                         {
-                            m_velocity = m_maxSpeed * m_inputDirection;
+                            m_velocity = m_maxSpeed * (inputRotatorForGround * m_inputDirection);
                         }
                         else
                         {
-                            Vector3 deltaAddedVelocity = m_airAcceleration * deltaTime * m_inputDirection;
-                            horizontalVelocity = Vector3.ClampMagnitude(horizontalVelocity + deltaAddedVelocity, m_maxAirSpeed);
+                            Vector3 deltaAddedVelocity = m_acceleration * deltaTime * (inputRotatorForGround * m_inputDirection);
+                            m_velocity = Vector3.ClampMagnitude(reorientVelocity + deltaAddedVelocity, m_maxSpeed);
                         }
                     }
+                    // Break the character movement (Decline velocity to zero)
                     else
                     {
-                        horizontalVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_drag * deltaTime));
+                        m_velocity = Vector3.Lerp(reorientVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_friction * deltaTime));
                     }
                 }
-                // Vertical velocity
-                {
-                    if (m_useGravity)
-                    {
-                        verticalSpeed += deltaTime * -m_gravity;
-                    }
-
-                    verticalSpeed = Mathf.Max(verticalSpeed, -m_maxFallSpeed);
-                    verticalVelocity = verticalSpeed * characterUp;
-
-                    if(verticalSpeed < 0.0f)
-                    {
-                        OnFall?.Invoke(this);
-                    }
-                }
-
-                m_velocity = horizontalVelocity + verticalVelocity;
-            }
-            
-            if(m_inputJump)
-            {
-                m_inputJump = false;
-
-                bool canJump = false;
-                if (m_groundReport.hitAnyGround && m_groundReport.isStable)
-                {
-                    canJump = true;
-                }
+                // Movement on airbone
                 else
                 {
-                    if(m_leftMoreJumpCount > 0)
+                    Vector3 characterUp = m_nextRot * Vector3.up;
+
+                    Vector3 horizontalVelocity = Vector3.ProjectOnPlane(m_velocity, characterUp);
+                    float verticalSpeed = Vector3.Dot(m_velocity, characterUp);
+                    Vector3 verticalVelocity;
+
+                    // Horizontal velocity
                     {
-                        --m_leftMoreJumpCount;
-                        canJump = true;
+                        if (m_inputDirection != Vector3.zero)
+                        {
+                            if (float.IsPositiveInfinity(m_airAcceleration))
+                            {
+                                m_velocity = m_maxSpeed * m_inputDirection;
+                            }
+                            else
+                            {
+                                Vector3 deltaAddedVelocity = m_airAcceleration * deltaTime * m_inputDirection;
+                                horizontalVelocity = Vector3.ClampMagnitude(horizontalVelocity + deltaAddedVelocity, m_maxAirSpeed);
+                            }
+                        }
+                        else
+                        {
+                            horizontalVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_drag * deltaTime));
+                        }
+                    }
+
+                    // Vertical velocity
+                    {
+                        if (m_useGravity)
+                        {
+                            verticalSpeed += deltaTime * -m_gravity * m_gravityWeights;
+                        }
+
+                        verticalSpeed = Mathf.Max(verticalSpeed, -m_maxFallSpeed);
+                        verticalVelocity = verticalSpeed * characterUp;
+
+                        if (verticalSpeed < 0.0f)
+                        {
+                            m_doJump = false;
+                            m_gravityWeights = m_fallWeights;
+
+                            OnFall?.Invoke(this);
+                        }
+                    }
+
+                    m_velocity = horizontalVelocity + verticalVelocity;
+                }
+
+                if (m_doJump)
+                {
+                    m_elapsedJumpTime += deltaTime;
+                }
+
+                if (m_requestedJump)
+                {
+                    m_requestedJump = false;
+
+                    // Check can character jump
+                    // Awalys enable to jump on stable ground
+                    if (m_groundReport.hitAnyGround && m_groundReport.isStable)
+                    {
+                        m_doJump = true;
+                    }
+                    // Should have more jump on airborn
+                    else
+                    {
+                        if (m_leftMoreJumpCount > 0)
+                        {
+                            m_doJump = true;
+                            --m_leftMoreJumpCount;
+                        }
+                    }
+
+                    // Execute jump if enable
+                    if (m_doJump)
+                    {
+                        m_elapsedJumpTime = 0.0f;
+                        m_gravityWeights = 1.0f;
+
+                        Vector3 characterUp = m_nextRot * Vector3.up;
+                        // Rewrite vertical velocity but keep horizontal
+                        m_velocity = Vector3.ProjectOnPlane(m_velocity, characterUp)
+                            + characterUp * Mathf.Sqrt(2.0f * m_gravity * m_maxJumpDistance);
+                        ForceUnground();
                     }
                 }
 
-                if (canJump)
+                if (m_requestedStopJump)
                 {
-                    Vector3 characterUp = m_nextRot * Vector3.up;
-                    m_velocity = Vector3.ProjectOnPlane(m_velocity, characterUp) + characterUp * Mathf.Sqrt(2.0f * m_gravity * m_jumpDistance);
-                    ForceUnground();
-                }
-            }
+                    m_requestedStopJump = false;
 
-            if (m_inputStopJump)
-            {
-                m_inputStopJump = false;
+                    // Execute only if jumping
+                    if (m_doJump)
+                    {
+                        float init = Mathf.Sqrt(2.0f * m_gravity * m_maxJumpDistance);
+                        float currentJumpHeight = init * m_elapsedJumpTime + 0.5f * -m_gravity * m_elapsedJumpTime * m_elapsedJumpTime;
+                        // Ceil(Left-Jump-Distance) / Min-Jump-Distance
+                        float forceFallingWeights = (m_maxJumpDistance - Mathf.Floor(currentJumpHeight)) / m_minJumpDistance;
+
+                        if (forceFallingWeights < 1.0f)
+                        {
+                            forceFallingWeights = 1.0f;
+                        }
+                        m_gravityWeights = forceFallingWeights;
+                    }
+                }
+                break;
+            case EState.Fly:
+                break;
+            case EState.Swim:
+                break;
+            case EState.Custom:
+                break;
+            default:
+                Debug.LogError("Undefined state");
+                break;
             }
             #endregion
 
@@ -545,13 +651,12 @@ namespace ProjectAD
         }
 
         /// <summary>
-        /// Decollision body-collider from other interactive colliders
-        /// This method would change position but don't appied to velocity
+        /// Depentration body collider from other interactive colliders
         /// </summary>
         private void SolveOverlap ()
         {
             int currentIteration = 0;
-            while (currentIteration++ < m_maxDecollisionIteration)
+            while (currentIteration++ < m_depentrationIteration)
             {
                 // If there are overlaped collider with character, detach character from these
                 int overlapCnt = CharacterOverlap(m_nextPos, m_nextRot, m_colliderBuffer);
@@ -598,9 +703,7 @@ namespace ProjectAD
             }
         }
 
-        /// <summary>
-        /// Move character continously
-        /// </summary>
+        /// <summary>Move character continously</summary>
         /// <param name="distance">Distance character will move based on world unity</param>
         private void CharacterMove (Vector3 distance)
         {
@@ -617,7 +720,7 @@ namespace ProjectAD
             Vector3 remainingDistance = distance;
 
             int currentIteration = 0;
-            while (currentIteration < m_maxVelocityIteration && remainingDistance.sqrMagnitude > 0.0f)
+            while (currentIteration < m_velocityIteration && remainingDistance.sqrMagnitude > 0.0f)
             {
                 Vector3 remainingDirection = remainingDistance.normalized;
                 float remainingMagnitude = remainingDistance.magnitude;
@@ -633,24 +736,46 @@ namespace ProjectAD
                     Vector3 tmp = Vector3.Cross(closestHit.normal, remainingDirection);
                     Vector3 tangent = Vector3.Cross(closestHit.normal, tmp).normalized;
 
-                    remainingDistance = Vector3.Dot(tangent, remainingDirection) * remainingMagnitude * tangent;
+                    if (m_state == EState.Walk)
+                    {
+                        remainingDistance = Vector3.Dot(tangent, remainingDirection) * remainingMagnitude * tangent;
+                        Vector3 characterUp = m_nextRot * Vector3.up;
+
+                        if (Vector3.Angle(characterUp, closestHit.normal) > m_stableAngle)
+                        {
+                            if(Vector3.Dot(remainingDistance, characterUp) > 0.0f)
+                            {
+                                remainingDistance -= Vector3.Dot(remainingDistance, characterUp) * characterUp;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        remainingDistance = Vector3.Dot(tangent, remainingDirection) * remainingMagnitude * tangent;
+                    }
                     ++currentIteration;
                 }
                 else
                 {
                     tgtPos += remainingDistance;
-                    //remainingDistance = Vector3.zero;
+                    remainingDistance = Vector3.zero;
                     break;
                 }
             }
 
             // When Exceed velocity iteration
-            if(currentIteration >= m_maxVelocityIteration)
+            if(currentIteration >= m_velocityIteration)
             {
                 // Discard calculated next position from here
                 if (m_killPositionWhenExceedVelocityIteration)
                 {
                     tgtPos = m_initPos;
+                }
+                
+                // Appand remained distance to destination
+                if (!m_killRemainedDistanceWhenExceedVelocityIteration)
+                {
+                    tgtPos += remainingDistance;
                 }
             }
 
